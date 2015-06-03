@@ -15,12 +15,12 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 # export CATALINA_HOME=/usr/local/apache-tomcat-8.0.15
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 
-alias l="ls -G"
-alias ls="ls -G"
-alias la="ls -aG"
-alias ll="ls -lG | less"
-alias lal="ls -laG | less"
-alias lla="ls -laG | less"
+alias l="ls -G --color"
+alias ls="ls -G --color"
+alias la="ls -aG --color"
+alias ll="ls -lG --color | less"
+alias lal="ls -laG --color | less"
+alias lla="ls -laG --color | less"
 alias gls="gls --color"
 alias xbb="extractbb"
 alias ebb="extractbb"
@@ -28,12 +28,9 @@ alias latexmk="latexmk -pdfdvi"
 alias lmk="latexmk -pdfdvi"
 alias lmkc="latexmk -c"
 alias lmkC="latexmk -C"
+alias g++11="g++ -std=c++11"
 alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
-alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
-
-export LANG='ja_JP.UTF-8'
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
@@ -57,11 +54,11 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 # End of lines configured by zsh-newuser-install
+
 
 

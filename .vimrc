@@ -1,3 +1,4 @@
+syntax on
 set expandtab
 set ts=2 sw=2 sts=0
 set number
@@ -6,31 +7,52 @@ set clipboard+=unnamed         " yank -> clipboard
 set backupdir=$HOME/.vim-backup-undo/backup
 set undodir=$HOME/.vim-backup-undo/undo
 
-" vundle
-" http://tell-k.hatenablog.com/entry/2012/01/26/231425
-set nocompatible               " be iMproved
-filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle.vim
-call vundle#rc()
-" let Vundle manage Vundle
-" " required! 
-Bundle 'gmarik/vundle'
-" " My Bundles here:
-""" TypeScript
-Bundle 'typescript-vim'
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+  "
+  " Required:
+  set runtimepath+=/home/rmn_e/.vim/bundle/neobundle.vim/
+endif
+"
+" Required:
+call neobundle#begin(expand('/home/rmn_e/.vim/bundle'))
+"
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+"
+"            " Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+"
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+"
+NeoBundle 'https://github.com/leafgarland/typescript-vim.git'
+NeoBundle 'https://github.com/clausreinke/typescript-tools.vim'
 autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
-" " githubの特定のリポジトリからインストール
-Bundle 'tell-k/vim-browsereload-mac'
-Bundle 'fholgado/minibufexpl.vim'
+NeoBundle 'tell-k/vim-browsereload-mac'
+NeoBundle 'fholgado/minibufexpl.vim'
 "
-" " github の "vim-scripts" のアカウントが持ってるリポジトリ
-" " からインストール(https://github.com/vim-scripts/)
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'python_fold'
+NeoBundle 'L9'
+NeoBundle 'FuzzyFinder'
+NeoBundle 'python_fold'
+
+" Required:
+call neobundle#end()
 "
-filetype plugin indent on     " required! 
+" Required:
+filetype plugin indent on
 
-
-
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+"
