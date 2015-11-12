@@ -1,8 +1,21 @@
 autoload -U colors
 colors
 
+# gitブランチ表示
+# 参考にしました: http://mollifier.hatenablog.com/entry/20090814/p1
+zstyle ':vcs_info:*' formats "%s:%b"
+zstyle ':vcs_info:*' actionformats "%s<%a>:%b"
+precmd () {
+  psvar=()
+  LANG=ja_JP.UTF-8 vcs_info
+  [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
+RPROMPT="%1(v|%F{green}%1v%f|)"
+
 PROMPT="%{$bg[blue]$fg[white]%}[%n]%{$reset_color%} %{${fg[cyan]}%}%~%{${reset_color}%} %% "
 autoload -U compinit
+autoload -Uz vcs_info
+
 compinit
 
 export LSCOLORS=ExFxCxdxBxegedabagacad
