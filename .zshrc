@@ -7,9 +7,11 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 
 
 #################  PATH ZONE ##################################
-## Oracle JDK: 使用する場合はコメントを解除してください
-# export PATH=$PATH":"$JAVA_HOME"/bin"
+## Oracle JDK: 使用する場合はコメントを解除してください。
+# export PATH="$JAVA_HOME/bin:$PATH"
 
+## anyenv: 使用する場合はコメントを解除してください。
+# export PATH="$HOME/.anyenv/bin:$PATH"
 
 ################  ALIAS ZONE ##################################
 alias l="ls -G --color"
@@ -28,6 +30,9 @@ alias lmkC="latexmk -C"
 alias g++11="g++ -std=c++11"
 alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
+
+################  ANYENV ZONE     ##################################
+# eval "$(anyenv init -)"
 
 ####################################################################
 #
