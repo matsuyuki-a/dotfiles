@@ -1,3 +1,37 @@
+################  ENV ZONE ###################################
+export LSCOLORS=ExFxCxdxBxegedabagacad
+export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+
+# JAVA_HOME: 環境に合わせて変更してください。
+# export JAVA_HOME="/opt/java/jdk1.8.0_121"
+
+
+#################  PATH ZONE ##################################
+## Oracle JDK: 使用する場合はコメントを解除してください
+# export PATH=$PATH":"$JAVA_HOME"/bin"
+
+
+################  ALIAS ZONE ##################################
+alias l="ls -G --color"
+alias ls="ls -G --color"
+alias la="ls -aG --color"
+alias ll="ls -lG --color | less"
+alias lal="ls -laG --color | less"
+alias lla="ls -laG --color | less"
+alias gls="gls --color"
+alias xbb="extractbb"
+alias ebb="extractbb"
+alias latexmk="latexmk -pdfdvi"
+alias lmk="latexmk -pdfdvi"
+alias lmkc="latexmk -c"
+alias lmkC="latexmk -C"
+alias g++11="g++ -std=c++11"
+alias clang++11="clang++ -std=c++11"
+alias clean="rm *~;echo \"directory cleaned.\""
+
+####################################################################
+#
+#
 autoload -U colors
 colors
 
@@ -18,8 +52,6 @@ autoload -Uz vcs_info
 
 compinit
 
-export LSCOLORS=ExFxCxdxBxegedabagacad
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 # zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34';;
 
 # export LANG=ja_jp.UTF-8
@@ -28,22 +60,6 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 # export CATALINA_HOME=/usr/local/apache-tomcat-8.0.15
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 
-alias l="ls -G --color"
-alias ls="ls -G --color"
-alias la="ls -aG --color"
-alias ll="ls -lG --color | less"
-alias lal="ls -laG --color | less"
-alias lla="ls -laG --color | less"
-alias gls="gls --color"
-alias xbb="extractbb"
-alias ebb="extractbb"
-alias latexmk="latexmk -pdfdvi"
-alias lmk="latexmk -pdfdvi"
-alias lmkc="latexmk -c"
-alias lmkC="latexmk -C"
-alias g++11="g++ -std=c++11"
-alias clang++11="clang++ -std=c++11"
-alias clean="rm *~;echo \"directory cleaned.\""
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
