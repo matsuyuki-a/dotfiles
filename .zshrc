@@ -14,12 +14,15 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 # export PATH="$HOME/.anyenv/bin:$PATH"
 
 ################  ALIAS ZONE ##################################
-alias l="ls -G --color"
-alias ls="ls -G --color"
-alias la="ls -aG --color"
-alias ll="ls -lG --color | less"
-alias lal="ls -laG --color | less"
-alias lla="ls -laG --color | less"
+if [ "$(uname)" = "Darwin" ]; then
+  alias ls="ls -G"
+  alias ll="ls -lG"
+  alias la="ls -aG"
+else 
+  alias ls="ls --color"
+  alias ll="ls -l --color"
+  alias la="ls -a --color"
+fi
 alias gls="gls --color"
 alias xbb="extractbb"
 alias ebb="extractbb"
