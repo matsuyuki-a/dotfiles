@@ -37,6 +37,11 @@ alias clean="rm *~;echo \"directory cleaned.\""
 ################  ANYENV ZONE     ##################################
 # eval "$(anyenv init -)"
 
+
+################  zsh-syntax-highlighting     ##################################
+# zsh-syntax-highlighting のインストール先に合わせて変更してください。
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 ####################################################################
 #
 #
