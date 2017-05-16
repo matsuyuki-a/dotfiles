@@ -6,6 +6,7 @@ set clipboard+=autoselect      " visual selection -> clipboard
 set clipboard+=unnamed         " yank -> clipboard
 set backupdir=$HOME/.vim-backup-undo/backup
 set undodir=$HOME/.vim-backup-undo/undo
+set backspace=indent,eol,start
 
 "NeoBundle Scripts-----------------------------
 if has('vim_starting')
