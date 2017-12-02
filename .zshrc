@@ -41,6 +41,10 @@ alias g++11="g++ -std=c++11"
 alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
 alias tmux="tmux -2"
+## Visual Studio Code (macOS Only)
+if [ "$(uname)" = "Darwin" ]; then
+  alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
+fi
 
 ################  ANYENV ZONE     ##################################
 # eval "$(anyenv init -)"
