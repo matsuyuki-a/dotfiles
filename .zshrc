@@ -19,6 +19,8 @@ if [ "$(uname)" = "Darwin" ]; then
 #  export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
 fi
 
+## go: GOPATHを使用する場合はコメントを解除してください。
+# export GOPATH="$HOME/go"
 
 ################  ALIAS ZONE ##################################
 if [ "$(uname)" = "Darwin" ]; then
