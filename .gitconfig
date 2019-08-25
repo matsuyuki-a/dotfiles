@@ -3,4 +3,6 @@
   email = matsuyuki.eca@gmail.com
 [push]
   default = simple
+[core]
+  editor = vim
 
