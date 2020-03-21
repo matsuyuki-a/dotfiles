@@ -1,0 +1,42 @@
+[
+    {
+        "key": "ctrl+8",
+        "command": "-workbench.action.focusEighthEditorGroup",
+        "when": "isWindows || isLinux"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "isWindows || isLinux"
+    },
+    {
+        "key": "cmd+8",
+        "command": "-workbench.action.focusEighthEditorGroup",
+        "when": "isMac"
+    },
+    {
+        "key": "cmd+8",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+oem_3",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "isWindows || isLinux"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "isMac"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert' && isMac"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-extension.vim_ctrl+f",
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    }
+]
