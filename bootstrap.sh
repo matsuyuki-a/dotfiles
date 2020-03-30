@@ -23,7 +23,7 @@ cp ./nvim/init.vim ~/.config/nvim
 
 # VSCode の設定ファイルのコピー
 if [ "$(uname)" = "Darwin" ]; then
-  CONFIG_PATH="$HOME/Library/Application\ Support/Code/User"
+  CONFIG_PATH="$HOME/Library/Application Support/Code/User"
 else 
   CONFIG_PATH="$HOME/.config/Code/User"
 fi
