@@ -13,12 +13,6 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 ## anyenv: 使用する場合はコメントを解除してください。
 # export PATH="$HOME/.anyenv/bin:$PATH"
 
-## macvim: macでmacvimを使用する場合はコメントを解除してください。
-# パスが違う場合は適宜修正してください。
-if [ "$(uname)" = "Darwin" ]; then
-#  export PATH="/Applications/MacVim.app/Contents/bin:$PATH"
-fi
-
 ## go: GOPATHを使用する場合はコメントを解除してください。
 # export GOPATH="$HOME/go"
 
@@ -43,6 +37,7 @@ alias g++11="g++ -std=c++11"
 alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
 alias tmux="tmux -2"
+alias vim="nvim"
 ## Visual Studio Code (macOS Only)
 if [ "$(uname)" = "Darwin" ]; then
   alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
