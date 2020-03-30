@@ -21,14 +21,13 @@ cp ./nodenv/default-packages $(nodenv root)
 mkdir -p ~/.config/nvim
 cp ./nvim/init.vim ~/.config/nvim
 
-
 # VSCode の設定ファイルのコピー
 if [ "$(uname)" = "Darwin" ]; then
-  CONFIG_PATH=$HOME/Library/Application/Support/Code/User
+  CONFIG_PATH="$HOME/Library/Application\ Support/Code/User"
 else 
-  CONFIG_PATH=$HOME/.config/Code/User
+  CONFIG_PATH="$HOME/.config/Code/User"
 fi
-cp $CONFIG_PATH/keybindings.json $CONFIG_PATH/keybindings.old.json
-cp $CONFIG_PATH/settings.json $CONFIG_PATH/settings.old.json
-cp ./vscode/keybindings.json $CONFIG_PATH
-cp ./vscode/settings.json $CONFIG_PATH
+cp "$CONFIG_PATH/keybindings.json" "$CONFIG_PATH/keybindings.old.json"
+cp "$CONFIG_PATH/settings.json" "$CONFIG_PATH/settings.old.json"
+cp "./vscode/keybindings.json" "$CONFIG_PATH"
+cp "./vscode/settings.json" "$CONFIG_PATH"
