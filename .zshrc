@@ -45,7 +45,7 @@ fi
 
 ################  ANYENV ZONE     ##################################
 # eval "$(anyenv init -)"
-
+# eval "$(pyenv virtualenv-init -)"
 
 ################  zsh-syntax-highlighting     ##################################
 # zsh-syntax-highlighting のインストール先に合わせて変更してください。
