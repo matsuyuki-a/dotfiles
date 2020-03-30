@@ -3,11 +3,10 @@ export LSCOLORS=ExFxCxdxBxegedabagacad
 export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
 # JAVA_HOME: 環境に合わせて変更してください。
-# export JAVA_HOME="/opt/java/jdk1.8.0_121"
-
+# export JAVA_HOME="/opt/java/jdk-14"
 
 #################  PATH ZONE ##################################
-## Oracle JDK: 使用する場合はコメントを解除してください。
+## OpenJDK: 使用する場合はコメントを解除してください。
 # export PATH="$JAVA_HOME/bin:$PATH"
 
 ## anyenv: 使用する場合はコメントを解除してください。
@@ -80,8 +79,6 @@ compinit
 # export XMODIFIRES=@im=uim
 # export GTK_IM_MODULE=uim
 # export CATALINA_HOME=/usr/local/apache-tomcat-8.0.15
-# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
-
 
 # Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=1000
