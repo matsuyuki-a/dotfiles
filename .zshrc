@@ -14,6 +14,7 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 
 ## go: GOPATHを使用する場合はコメントを解除してください。
 # export GOPATH="$HOME/go"
+# export PATH="$GOPATH/bin:$PATH"
 
 ################  ALIAS ZONE ##################################
 if [ "$(uname)" = "Darwin" ]; then
@@ -45,9 +46,6 @@ fi
 ################  ANYENV ZONE     ##################################
 # eval "$(anyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
-
-## goenv + GOPATH を使う場合はコメントを解除してください。
-# export PATH="$GOPATH/"$(goenv version | awk '{ print $1 }')"/bin:$PATH"
 
 ################  zsh-syntax-highlighting     ##################################
 # zsh-syntax-highlighting のインストール先に合わせて変更してください。
