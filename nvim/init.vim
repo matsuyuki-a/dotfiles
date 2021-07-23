@@ -42,7 +42,6 @@ if dein#load_state('~/.cache/dein')
   " Dein
   "# REQUIRED: Add a syntax file. YATS is the best
   call dein#add('HerringtonDarkholme/yats.vim')
-  call dein#add('mhartington/nvim-typescript', {'build': './install.sh'})
   " For async completion
   call dein#add('Shougo/deoplete.nvim')
   " For Denite features
@@ -67,22 +66,4 @@ if dein#check_install()
 endif
 
 "End dein Scripts------------------------
-
-" NeoBundle時代のプラグイン 調整中
-" NeoBundle 'Shougo/neosnippet.vim'
-" NeoBundle 'Shougo/neosnippet-snippets'
-" NeoBundle 'tpope/vim-fugitive'
-" NeoBundle 'ctrlpvim/ctrlp.vim'
-" NeoBundle 'flazz/vim-colorschemes'
-"
-" You can specify revision/branch/tag.
-" NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-" NeoBundle 'tell-k/vim-browsereload-mac'
-" NeoBundle 'fholgado/minibufexpl.vim'
-"
-" NeoBundle 'L9'
-" NeoBundle 'FuzzyFinder'
-" NeoBundle 'python_fold'
-
 
