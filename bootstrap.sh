@@ -31,3 +31,6 @@ cp "$CONFIG_PATH/keybindings.json" "$CONFIG_PATH/keybindings.old.json"
 cp "$CONFIG_PATH/settings.json" "$CONFIG_PATH/settings.old.json"
 cp "./vscode/keybindings.json" "$CONFIG_PATH"
 cp "./vscode/settings.json" "$CONFIG_PATH"
+
+# 256term のインストール
+sudo cp ./256term/256colors2.pl /usr/local/bin/256term
