@@ -38,6 +38,7 @@ alias g++11="g++ -std=c++11"
 alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
 alias tmux="tmux -2"
+alias mux="tmuxinator"
 alias vim="nvim"
 ## Visual Studio Code (macOS Only)
 if [ "$(uname)" = "Darwin" ]; then
