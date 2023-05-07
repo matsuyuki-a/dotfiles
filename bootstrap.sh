@@ -17,10 +17,6 @@ mkdir -p $DIR"/"$UNDO_DIR
 # nodenv で node をインストールした時に初期でグローバルインストールされるnpmパッケージの設定
 cp ./nodenv/default-packages $(nodenv root)
 
-# NeoVim の設定ファイル 
-mkdir -p ~/.config/nvim
-cp ./nvim/init.vim ~/.config/nvim
-
 # VSCode の設定ファイルのコピー
 if [ "$(uname)" = "Darwin" ]; then
   CONFIG_PATH="$HOME/Library/Application Support/Code/User"
