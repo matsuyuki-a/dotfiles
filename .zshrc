@@ -10,9 +10,6 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 ## OpenJDK: 使用する場合はコメントを解除してください。
 # export PATH="$JAVA_HOME/bin:$PATH"
 
-## anyenv: 使用する場合はコメントを解除してください。
-# export PATH="$HOME/.anyenv/bin:$PATH"
-
 ## go: GOPATHを使用する場合はコメントを解除してください。
 # export GOPATH="$HOME/go"
 # export PATH="$GOPATH/bin:$PATH"
@@ -45,9 +42,8 @@ if [ "$(uname)" = "Darwin" ]; then
   alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 fi
 
-################  ANYENV ZONE     ##################################
-# eval "$(anyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
+################  ASDF ZONE     ##################################
+# . "$HOME/.asdf/asdf.sh"
 
 ################  zsh-syntax-highlighting     ##################################
 # zsh-syntax-highlighting のインストール先に合わせて変更してください。
