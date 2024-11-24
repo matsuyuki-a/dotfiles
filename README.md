@@ -2,6 +2,8 @@
 dotfiles です。ホームディレクトリに入れるなりしてご利用ください.
 詳細な使い方は [Wiki](https://github.com/matsuyuki-a/dotfiles/wiki)を参照してください
 
+`.gitconfig` にユーザー名、メールアドレス、コミット署名用のSSH公開鍵が含まれているため、まつゆき以外が利用する場合は変更してください。
+
 ## License
 原則 CC0-1.0 とします。
 

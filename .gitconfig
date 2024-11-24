@@ -1,8 +1,19 @@
+[core]
+  editor = vim
+# WSL の場合はコメントアウトを解除してください
+#  sshCommand = /mnt/c/WINDOWS/System32/OpenSSH/ssh.exe
+
 [user]
   name = Matsuyuki
   email = matsuyuki.eca@gmail.com
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ1NXHyBCHmOWBGCUQOZ01ly9aBmYX2imDM6htwTkT/t
+
+[gpg]
+  format = ssh
+
+[commit]
+  gpgsign = true
+
 [push]
   default = simple
-[core]
-  editor = vim
 
