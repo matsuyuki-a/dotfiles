@@ -14,9 +14,6 @@ UNDO_DIR="undo"
 mkdir -p $DIR"/"$BACKUP_DIR
 mkdir -p $DIR"/"$UNDO_DIR
 
-# nodenv で node をインストールした時に初期でグローバルインストールされるnpmパッケージの設定
-cp ./nodenv/default-packages $(nodenv root)
-
 # VSCode の設定ファイルのコピー
 if [ "$(uname)" = "Darwin" ]; then
   CONFIG_PATH="$HOME/Library/Application Support/Code/User"
