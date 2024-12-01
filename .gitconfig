@@ -10,6 +10,9 @@
 
 [gpg]
   format = ssh
+[gpg "ssh"]
+  # Windows 側でユーザー名が異なる場合は変更してください
+  program = "/mnt/c/Users/matsuyuki/AppData/Local/1Password/app/8/op-ssh-sign-wsl"
 
 [commit]
   gpgsign = true
