@@ -36,7 +36,7 @@ alias clang++11="clang++ -std=c++11"
 alias clean="rm *~;echo \"directory cleaned.\""
 alias tmux="tmux -2"
 alias mux="tmuxinator"
-alias vim="nvim"
+# alias vim="nvim" # NeoVim 環境でのみコメントアウトを解除してください
 ## Visual Studio Code (macOS Only)
 if [ "$(uname)" = "Darwin" ]; then
   alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
