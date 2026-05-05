@@ -6,14 +6,6 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 # JAVA_HOME: 環境に合わせて変更してください。
 # export JAVA_HOME="/opt/java/jdk-14"
 
-#################  PATH ZONE ##################################
-## OpenJDK: 使用する場合はコメントを解除してください。
-# export PATH="$JAVA_HOME/bin:$PATH"
-
-## go: GOPATHを使用する場合はコメントを解除してください。
-# export GOPATH="$HOME/go"
-# export PATH="$GOPATH/bin:$PATH"
-
 ################  ALIAS ZONE ##################################
 if [ "$(uname)" = "Darwin" ]; then
   alias ls="ls -G"
@@ -42,8 +34,8 @@ if [ "$(uname)" = "Darwin" ]; then
   alias code="/Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron"
 fi
 
-################  ASDF ZONE     ##################################
-# . "$HOME/.asdf/asdf.sh"
+################  MISE ZONE     ##################################
+eval "$(/home/matsuyuki/.local/bin/mise activate zsh)"
 
 ################  zsh-syntax-highlighting     ##################################
 # zsh-syntax-highlighting のインストール先に合わせて変更してください。
